@@ -1,1 +1,43 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinePlay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="logo">CINEPLAY</h1>
+  <p>Seu mundo de séries</p>
+</header>
+
+<section class="banner">
+  <img src="https://i.postimg.cc/C5xnfLYZ/Seu-Mundo-de-Series-no-CINEPLAY.png" alt="CinePlay">
+</section>
+
+<h2 class="section-title">Catálogo de séries</h2>
+<div id="catalog" class="catalog"></div>
+
+<section id="details" class="hidden">
+  <button onclick="goHome()">← Voltar</button>
+  <h1 id="seriesTitle"></h1>
+  <p id="description"></p>
+  <h2>Temporadas</h2>
+  <div id="seasons"></div>
+  <h2>Episódios</h2>
+  <div id="episodes"></div>
+</section>
+
+<section id="player" class="hidden">
+  <button onclick="goDetails()">← Voltar</button>
+  <h2 id="episodeTitle"></h2>
+  <video id="video" controls playsinline></video>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
